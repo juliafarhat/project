@@ -5,20 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Information</title>
+    <style>
+        .header { 
+            overflow: hidden; 
+            background-color: black; 
+            padding: 10px 10px;
+        }
+
+        .header-right a {
+            color: white; 
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            padding: 10px;
+            line-height: 20px;
+            border-radius: 4px;
+        }
+
+        .logo { 
+            color: orange;
+            text-decoration: none; 
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 10px;
+            line-height: 30px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Contact & Feedback Information</h1>
-    <div class="contact">
-        <form action="contact.html">
-            <label for="name">Name:</label>
-            <input type="text" id="name">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email">
-            <label for="comment">Questions? Suggestions? Let me know!</label>
-            <textarea id="comment"></textarea>
-        </form>
-
+    <div class="header">
+        <a href="#default" class="logo">São Paulo Restaurants</a>
+        <div class="header-right"> 
+            <a class="active" href="index.html">Homepage</a>
+            <a class="active" href="italian.html">Italian</a>
+            <a class="active" href="japanese.html">Japanese/Sushi</a>
+            <a class="active" href="brazilian.html">Brazilian</a>
+            <a class="active" href="lebanese.html">Arab/Lebanese</a>
+            <a class="active" href="burgers.html">Burgers</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </div>
+
+    <h1>Contact & Feedback Information</h1>
+
+    <div class="contactform">
+    <h3>Feedback Form:</h3>
+        <form action="contact.html">
+            <div class="name">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+            </div>
+            <div class="email">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email">
+            </div>
+            <div class="comment">
+                <label for="comment">Questions? Suggestions? Let me know!</label>
+                <textarea name="comment" rows="4" cols="50"></textarea>
+            </div>
+            <div>
+                <button type="submit" name="submit">Send</button>
+            </div>
+        </form>
+    </div>
+    <div class="contactinfo">
+    <h3>Contact Information:</h3>
+        <p>E-mail:<a href="mailto:jfarhat1@babson.edu">jfarhat1@babson.edu</a></p>
+    </div>  
+   
 
 
 </body>
