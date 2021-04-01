@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japanese/Sushi Restaurants</title>
+    <link rel="shortcut icon" href="images/brazil-circular.ico" type="image/x-icon">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7ZW9E9GJR"></script>
 <script>
@@ -15,31 +16,94 @@
   gtag('config', 'G-Q7ZW9E9GJR');
 </script>
     <style>
-        .header { 
+         .header { 
             overflow: hidden; 
             background-color: black; 
+            margin: 0;
+            height: 50px;
             padding: 10px 10px;
-        }
+            white-space: nowrap;
+     }
 
         .header-right a {
             color: white; 
+            float: left;
+            display: block;
             text-decoration: none;
-            font-size: 18px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 15pt;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             text-align: center;
-            padding: 10px;
+            padding: 3px 15px;
             line-height: 20px;
             border-radius: 4px;
         }
 
+        a:hover {
+            color: turquoise;
+        }
+
         .logo { 
-            color: orange;
+            color: lightpink;
             text-decoration: none; 
-            font-size: 25px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            padding: 10px;
+            font-size: 20pt;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             line-height: 30px;
         }
+
+
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: left;
+            margin-left: 20px;
+            font-size: 25pt;
+        }
+
+        h3 { 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: left;
+            margin-left: 20px;
+            font-size: 18pt;
+        }
+
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12pt; 
+            text-indent: 20px; 
+            line-height: 1.5em;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        #credits { 
+            font-style: italic;
+            font-size: 10pt;
+        }
+
+        table {
+            width: 75%;
+            margin-left: auto; 
+            margin-right: auto; 
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+        }
+
+        td, th, tr { 
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        .description {
+            width: 40%;
+        }
+
+        #title { 
+           color: maroon;
+           font-size: 15pt;
+        }
+
+
     </style>
 </head>
 <body>
@@ -63,13 +127,13 @@
     <div class="sushi">
         <h3>Sushi Restaurants:</h3>
             <table>
-            <tr> 
+            <tr id="title"> 
                 <th>Restaurant:</th>
                 <th>Description/Review:</th>
                 <th>Plate Recommendations:</th>
             </tr>
             <tr>
-                <th class="sushi">Huto</th>
+                <td class="sushi">Huto</td>
                 <td class="description">The cuisine and ambiance will never disappoint at One MICHELIN Star restaurant. You will find the highest quality japanese food at this small restaurant (which is run by the owner himself).</td>
                 <td>
                     <ul>
@@ -80,7 +144,7 @@
                 </td>
             </tr>
             <tr>
-                <th class="sushi">Kosushi</th>
+                <td class="sushi">Kosushi</td>
                 <td class="description">According to the Michelin Guide "the name [of the restaurant] comes from Japanese philosophy, as the word 'ko' means 'turtle' [referencing] longevity and the number 1." Kosushi is also a MICHELIN star restaurant, but beyond that, it is known for serving high quality fish, with a beautiful presentation, and nevertheless, an impeccable taste. </td>
                 <td>
                     <ul>
@@ -90,7 +154,7 @@
                 </td>
             </tr>
             <tr>
-                <th class="sushi">By Koji</th>
+                <td class="sushi">By Koji</td>
                 <td class="description">Located inside the São Paulo Futebol Clube soccer stadium, Koji is known for its views of the field (yes you can eat there on game day - but you have to book in advance) as well as its great variety of high quality fish.</td>
                 <td>
                     <ul>
@@ -101,7 +165,7 @@
                 </td>
             </tr>
             <tr>
-                <th class="sushi">Ohka</th>
+                <td class="sushi">Ohka</td>
                 <td class="description">Another MICHCELIN restaurant, Ohka differentiates itself with its colorful paper images of geishas and other traditional Japanese images along its walls, creating a contemporary and elegant look. Again, the high quality and great service is what continually attracts customers.</td>
                 <td>
                     <ul>
@@ -114,6 +178,7 @@
         </table>
     </div>
 
+    <p id="credits"> All intellectual property at this website is in the public domain or is the property of the site-owner.</p>
     <a href="sitemap.html" target="_blank">Sitemap</a>
 
 </body>

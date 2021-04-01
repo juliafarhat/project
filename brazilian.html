@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brazilian Restaurants and Steakhouses</title>
+    <link rel="shortcut icon" href="images/brazil-circular.ico" type="image/x-icon">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7ZW9E9GJR"></script>
 <script>
@@ -15,31 +16,93 @@
   gtag('config', 'G-Q7ZW9E9GJR');
 </script>
     <style>
-        .header { 
+            .header { 
             overflow: hidden; 
             background-color: black; 
+            margin: 0;
+            height: 50px;
             padding: 10px 10px;
-        }
+            white-space: nowrap;
+     }
 
         .header-right a {
             color: white; 
+            float: left;
+            display: block;
             text-decoration: none;
-            font-size: 18px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 15pt;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             text-align: center;
-            padding: 10px;
+            padding: 3px 15px;
             line-height: 20px;
             border-radius: 4px;
         }
 
+        a:hover {
+            color: turquoise;
+        }
+
         .logo { 
-            color: orange;
+            color: lightpink;
             text-decoration: none; 
-            font-size: 25px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            padding: 10px;
+            font-size: 20pt;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             line-height: 30px;
         }
+
+
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: left;
+            margin-left: 20px;
+            font-size: 25pt;
+        }
+
+        h3 { 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: left;
+            margin-left: 20px;
+            font-size: 18pt;
+        }
+
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12pt; 
+            text-indent: 20px; 
+            line-height: 1.5em;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        #credits { 
+            font-style: italic;
+            font-size: 10pt;
+        }
+
+        table {
+            width: 75%;
+            margin-left: auto; 
+            margin-right: auto; 
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+        }
+
+        td, th, tr { 
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        .description {
+            width: 40%;
+        }
+
+        #title { 
+           color: maroon;
+           font-size: 15pt;
+        }
+
     </style>
 </head>
 <body>
@@ -63,13 +126,13 @@
     <div class="brazilian">
         <h3>Brazilian Restaurants:</h3>
             <table>
-            <tr> 
+            <tr id="title"> 
                 <th>Restaurant:</th>
                 <th>Description/Review:</th>
                 <th>Plate Recommendations:</th>
             </tr>
             <tr>
-                <th class="brazilian">Figueira Rubaiyat</th>
+                <td class="brazilian">Figueira Rubaiyat</td>
                 <td class="description">*Personal Favorite* Once you walk into the restaurant you are confronted by this hundred-years-old Bengal fig tree (Figueira), where all the tables are seated underneath its massive branches. The MICHELIN star restaurant is known for its fabulous meats, but also serves fantastic fish and seafood.</td>
                 <td>
                     <ul>
@@ -79,7 +142,7 @@
                 </td>
             </tr>
             <tr>
-                <th class="brazilian">Varanda Jardins</th>
+                <td class="brazilian">Varanda Jardins</td>
                 <td class="description">This restaurant is known for its fabulous meat cuts - the owner was once president of the Brazilian Cattle Breeders' Association. Also, a MICHELIN star restaurant, Varanda also have a beautiful environment, with wood and glass combinations that really create a pleasant ambiance.</td>
                 <td>
                     <ul>
@@ -89,7 +152,7 @@
                 </td>
             </tr>
             <tr>
-                <th class="brazilian">La Tamboille</th>
+                <td class="brazilian">La Tamboille</td>
                 <td class="description">With its location so central yet so hidden, La Tamboille is an icon within the local gastronomy. However, they only offer their extraordinary feijoada on Saturdays. Cooking for three days, the meats, beans, and spices are all added together to reach their perfect taste. </td>
                 <td>
                     <ul>
@@ -98,7 +161,7 @@
                 </td>
             </tr>
             <tr>
-                <th class="brazilian">Bar da Dona Onça</th>
+                <td class="brazilian">Bar da Dona Onça</td>
                 <td class="description">The iconic chef, Janaína Rueda, has created a menu that integrates stories and ingredients from all over the country yet maintaining the 'traditional'.The restaurant itself is located close to the heart of São Paulo, finding itself in a historically significant neighborhood. And, of course, it is also a MICHELIN restaurant.</td>
                 <td>
                     <ul>
@@ -111,6 +174,7 @@
         </table>
     </div>
 
+    <p id="credits"> All intellectual property at this website is in the public domain or is the property of the site-owner.</p>
     <a href="sitemap.html" target="_blank">Sitemap</a>
 
 </body>

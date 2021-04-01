@@ -18,28 +18,90 @@
         .header { 
             overflow: hidden; 
             background-color: black; 
+            margin: 0;
+            height: 50px;
             padding: 10px 10px;
-        }
+            white-space: nowrap;
+     }
 
         .header-right a {
             color: white; 
+            float: left;
+            display: block;
             text-decoration: none;
-            font-size: 18px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 15pt;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             text-align: center;
-            padding: 10px;
+            padding: 3px 15px;
             line-height: 20px;
             border-radius: 4px;
         }
 
+        a:hover {
+            color: turquoise;
+        }
+
         .logo { 
-            color: orange;
+            color: lightpink;
             text-decoration: none; 
-            font-size: 25px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            padding: 10px;
+            font-size: 20pt;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             line-height: 30px;
         }
+
+
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: left;
+            margin-left: 20px;
+            font-size: 25pt;
+        }
+
+        h3 { 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: left;
+            margin-left: 20px;
+            font-size: 18pt;
+        }
+
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12pt; 
+            text-indent: 20px; 
+            line-height: 1.5em;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        #credits { 
+            font-style: italic;
+            font-size: 10pt;
+        }
+
+        table {
+            width: 75%;
+            margin-left: auto; 
+            margin-right: auto; 
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+        }
+
+        td, th, tr { 
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        .description {
+            width: 40%;
+        }
+
+        #title { 
+           color: maroon;
+           font-size: 15pt;
+        }
+
     </style>
 </head>
 <body>
@@ -64,13 +126,13 @@
     <div class="burger">
         <h3>Hamburger Restaurants:</h3>
             <table>
-            <tr> 
+            <tr id="title"> 
                 <th>Restaurant:</th>
                 <th>Description/Review:</th>
                 <th>Plate Recommendations:</th>
             </tr>
             <tr>
-                <th class="burger">Cabana Burger</th>
+                <td class="burger">Cabana Burger</td>
                 <td class="description">Basically the Brazilian revamped 'high-end' Shake Shack (cabana literally means shack in Portuguese). All of their burgers are incredible, served with their homemade sauce alongside some delicious french fries. </td>
                 <td>
                     <ul rowspan="4">*At all these restaurants I reccommend any hamburger, along with the fries with the house mayo.
@@ -81,19 +143,20 @@
                 </td>
             </tr>
             <tr>
-                <th class="burger">Bullguer</th>
+                <td class="burger">Bullguer</td>
                 <td class="description">Incredibly consistent, whether in store or delivery experience, the fries always arrive in perfect condition - not soggy - and the burgers warm. The meat and combinations will melt in your mouth, while filling your heart with that warmth only a burger can give.</td>
             </tr>
             <tr>
-                <th class="burger">Lanchonete da Cidade</th>
+                <td class="burger">Lanchonete da Cidade</td>
                 <td class="description">A chain restaurant with multiple locations, which is just a blessing because its really good. With a variety of burgers to choose from and personalize (bread, condiments, etc.), you can also order full plates of food and delicious hotdogs.</td>
             </tr>
             <tr>
-                <th class="burger">Stunt Burger</th>
+                <td class="burger">Stunt Burger</td>
                 <td class="description">They are known for doing the classic very well along with being innovative with their burgers. They have menu items called 'waffle burger' and also do burgers with deep fried cheese... they are always inventing new ways to make their burger 'stunt' even more.</td>
             </tr>
         </table>
     </div>
+    <p id="credits"> All intellectual property at this website is in the public domain or is the property of the site-owner.</p>
     <a href="sitemap.html" target="_blank">Sitemap</a>
 
 </body>

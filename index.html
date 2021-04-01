@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="shortcut icon" href="images/brazil-circular.ico" type="image/x-icon">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7ZW9E9GJR"></script>
 <script>
@@ -18,28 +20,68 @@
         .header { 
             overflow: hidden; 
             background-color: black; 
+            margin: 0;
+            height: 50px;
             padding: 10px 10px;
-        }
+            white-space: nowrap;
+     }
 
         .header-right a {
             color: white; 
+            float: left;
+            display: block;
             text-decoration: none;
-            font-size: 18px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 15pt;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             text-align: center;
-            padding: 10px;
+            padding: 3px 15px;
             line-height: 20px;
             border-radius: 4px;
         }
 
+        a:hover {
+            color: turquoise;
+        }
+
         .logo { 
-            color: orange;
+            color: lightpink;
             text-decoration: none; 
-            font-size: 25px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            padding: 10px;
+            font-size: 20pt;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             line-height: 30px;
         }
+
+
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: left;
+            margin-left: 20px;
+            font-size: 25pt;
+        }
+
+        img { 
+            float: center;
+            display: block;
+            width: 75%;
+            height: auto;
+            margin-left: auto; 
+            margin-right: auto;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12pt; 
+            text-indent: 20px; 
+            line-height: 1.5em;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        #credits { 
+            font-style: italic;
+            font-size: 10pt;
+        }
+
     </style>
 </head>
 <body>
@@ -57,17 +99,18 @@
     </div>
     <div class="about">
         <h1>About São Paulo</h1>
-        <p> <img src="images/panoramaSp.jpg" alt="panoramaofSP" title="panorama">
+        <img src="images/panoramaSp.jpg" alt="panoramaofSP" title="panorama">
+        <p>
         São Paulo, city, is the capital of the state São Paulo, located in southeastern Brazil. The city is known for being the industrial center in Latin America, along with being the economic center for Brazil, but also for the continent. Found on a plateau, the city itself is only a short distance from beaches along the Atlantic Ocean (1-4 hour drive depending on what beach). Rio de Janeiro is not that far either, 350km away to be specific, a 30-45 minute plane ride from Congonhas to Santos Dumont and you’re in the heart of Rio de Janeiro. Sao Paulo is one of the largest cities AND has one of the fastest-growing metropolitan populations in the world. This is all due to coffee, the state had prime land to farm coffee, which soon became Brazil’s main export, allowed São Paulo to grow and industrialize. 
         <br>
-        <a href=
-        "https://www.britannica.com/place/Sao-Paulo-Brazil"?>Source</a>
+       
         </p>
         <p>
         <strong>As a local:</strong> São Paulo is known for being a metropolitan hub, business city, but we also have a lot of culture; from incredible museums, soccer stadiums, along with historical LGBTQ+ parades along Avenida Paulista. There is much more to São Paulo than the brief description I have provided above, and therefore I have created this website to showcase something not known to many, except to those who have visited. And that is …. THE FOOD IS AMAZING. Regardless of how much you want to spend, where you eat, what you want to eat, you will be amazed at the quality of the food being served. Anyway, this website is here to inform you about the restaurants I have visited and have deemed high quality and would recommend - I am in no way a professional at this and this is not a ranking per se but more of a ‘places you should go’ list. 
         </p>
     </div>
 
+    <p id="credits"> All intellectual property at this website is in the public domain or is the property of the site-owner.</p>
     <a href="sitemap.html" target="_blank">Sitemap</a>
 </body>
 </html>
