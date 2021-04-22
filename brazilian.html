@@ -128,57 +128,99 @@
     </div>
     <div class="brazilian">
         <h3>Brazilian Restaurants:</h3>
-            <table>
-            <tr id="title"> 
-                <th>Restaurant:</th>
-                <th>Description/Review:</th>
-                <th>Plate Recommendations:</th>
-            </tr>
-            <tr>
-                <td class="brazilian">Figueira Rubaiyat</td>
-                <td class="description">*Personal Favorite* Once you walk into the restaurant you are confronted by this hundred-years-old Bengal fig tree (Figueira), where all the tables are seated underneath its massive branches. The MICHELIN star restaurant is known for its fabulous meats, but also serves fantastic fish and seafood.</td>
-                <td>
-                    <ul>
-                        <li>Bife de chorizo (with batatas souflé and farofa)</li>
-                        <li>Caixote de Camarão com Riso Pastine</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td class="brazilian">Varanda Jardins</td>
-                <td class="description">This restaurant is known for its fabulous meat cuts - the owner was once president of the Brazilian Cattle Breeders' Association. Also, a MICHELIN star restaurant, Varanda also have a beautiful environment, with wood and glass combinations that really create a pleasant ambiance.</td>
-                <td>
-                    <ul>
-                        <li>Costelinhas de porco</li>
-                        <li>Bife de Chorizo (classic & will never disappoint)</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td class="brazilian">La Tambouille</td>
-                <td class="description">With its location so central yet so hidden, La Tambouille is an icon within the local gastronomy. However, they only offer their extraordinary feijoada on Saturdays. Cooking for three days, the meats, beans, and spices are all added together to reach their perfect taste. </td>
-                <td>
-                    <ul>
-                        <li>Feijoada (on Saturdays ONLY)</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td class="brazilian">Bar da Dona Onça</td>
-                <td class="description">The iconic chef, Janaína Rueda, has created a menu that integrates stories and ingredients from all over the country yet maintaining the 'traditional'.The restaurant itself is located close to the heart of São Paulo, finding itself in a historically significant neighborhood. And, of course, it is also a MICHELIN restaurant.</td>
-                <td>
-                    <ul>
-                        <li>Arroz de frutos do mar</li>
-                        <li>Picadinho de carne</li>
-                        <li>Estroganofe da Onça</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
+        <div>
+            <h4 class="brazilian">Figueira Rubayiat</h4>
+            <img
+            alt="Figueira Restaurant Ambiance"
+            height="250"
+            src="images/brazilian/figueira1.jpg"
+            id="figueira1"/>
+            <img
+            alt="Figueira Restaurant Food"
+            height="250"
+            src="images/brazilian/figueira2.jpg"
+            id="figueira2"/>
+            <p class="description"><i>*personal favorite*</i> Once you walk into the restaurant you are confronted by this hundred-years-old Bengal fig tree (Figueira), where all the tables are seated underneath its massive branches. The MICHELIN star restaurant is known for its fabulous meats, but also serves fantastic fish and seafood.
+            </p>
+            <h5>Plate recommendations:</h5>
+            <p>
+            Bife de chorizo (with batatas souflé and farofa), Caixote de Camarão com Riso Pastine
+            </p>
+        </div>
+        <div>
+            <h4 class="brazilian">Varanda Jardins</h4>
+            <img
+            alt="Varanda Restaurant Ambiance"
+            height="250"
+            src="images/brazilian/varanda1.jpg"
+            id="varanda1"/>
+            <img
+            alt="Varanda Restaurant Food"
+            height="250"
+            src="images/brazilian/varanda2.png"
+            id="varanda2"/>
+            <p class="description">This restaurant is known for its fabulous meat cuts - the owner was once president of the Brazilian Cattle Breeders' Association. Also, a MICHELIN star restaurant, Varanda also have a beautiful environment, with wood and glass combinations that really create a pleasant ambiance.
+            </p>
+            <h5>Plate recommendations:</h5>
+            <p>
+                Costelinhas de porco, bife de chorizo (classic at all steak restaurants).
+            </p>
+        </div>
+        <div>
+            <h4 class="brazilian">La Tambouille</h4>
+            <img
+            alt="La Tambouille Restaurant Ambiance"
+            height="250"
+            src="images/brazilian/tamb1.jpg"
+            id="tamb1"/>
+            <img
+            alt="La Tambouille Restaurant Food"
+            height="250"
+            src="images/brazilian/tamb2.jpg"
+            id="tamb2"/>
+            <p class="description">With its location so central yet so hidden, La Tambouille is a unknown icon within the local gastronomy. However, they only offer their extraordinary feijoada on Saturdays. Cooking for three days, the meats, beans, and spices are all added together to reach their perfect taste.
+            </p>
+            <h5>Plate recommendations:</h5>
+            <p>
+                Feijoada (only served on SATURDAYS - takes several days to cook)
+            </p>
+        </div>
+        <div>
+            <h4 class="brazilian">Bar da Dona Onça</h4>
+            <img
+            alt="Bar da Dona Onça Restaurant Ambiance"
+            height="250"
+            src="images/brazilian/onca1.jpg"
+            id="onca1"/>
+            <img
+            alt="Bar da Dona Onça Restaurant Food"
+            height="250"
+            src="images/brazilian/onca2.jpg"
+            id="onca2"/>
+            <p class="description">The iconic chef, Janaína Rueda, has created a menu that integrates stories and ingredients from all over the country yet maintaining the 'traditional'.The restaurant itself is located close to the heart of São Paulo, finding itself in a historically significant neighborhood. And, of course, it is also a MICHELIN restaurant.
+            </p>
+            <h5>Plate recommendations:</h5>
+            <p>
+               Seafood rice, picadinho de carne, estroganofe da Onça
+            </p>
+        </div>
     </div>
 
     <p id="credits"> All intellectual property at this website is in the public domain or is the property of the site-owner.</p>
     <a href="sitemap.html" target="_blank">Sitemap</a>
+<script>
+    const  img = document.getElementById("onca1");
+    img.onmouseover = foodImage;
+    img.onmouseout = ambianceImage;
 
+    function foodImage () {
+        food = document.getElementById("onca2");
+        ambiance = document.getElementById("onca1");
+        food = ambiance;
+    }
+
+</script>
 </body>
+
+
 </html>
