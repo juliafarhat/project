@@ -102,7 +102,7 @@
     </div>
     <div class="about">
         <h1>About São Paulo</h1>
-        <img src="images/panoramaSp.jpg" alt="panoramaofSP" title="panorama">
+        <img id="sp" />
         <p>
         São Paulo, city, is the capital of the state São Paulo, located in southeastern Brazil. The city is known for being the industrial center in Latin America, along with being the economic center for Brazil, but also for the continent. Found on a plateau, the city itself is only a short distance from beaches along the Atlantic Ocean (1-4 hour drive depending on what beach). Rio de Janeiro is not that far either, 350km away to be specific, a 30-45 minute plane ride from Congonhas to Santos Dumont and you’re in the heart of Rio de Janeiro. Sao Paulo is one of the largest cities AND has one of the fastest-growing metropolitan populations in the world. This is all due to coffee, the state had prime land to farm coffee, which soon became Brazil’s main export, allowed São Paulo to grow and industrialize. 
         <br>
@@ -115,5 +115,31 @@
 
     <p id="credits"> All intellectual property at this website is in the public domain or is the property of the site-owner.</p>
     <a href="sitemap.html" target="_blank">Sitemap</a>
+    <script> 
+    const slides = [
+        "images/sp1.jpg",
+        "images/sp2.jpg",
+        "images/sp3.jpg",
+        "images/sp4.jpg",
+        "images/sp5.jpg",
+        "images/sp6.jpg",
+        "images/sp7.jpg",
+        "images/sp8.jpg",
+    ];
+        let i = 0; 
+
+        function slideShow () {
+            let spImage = document.getElementById("sp");
+            if (i === slides.length) {
+                i = 0;
+            }
+                spImage.src = slides[i];
+                i++;
+                setTimeout(slideShow,3000);
+        }
+
+        document.querySelector("body").onload = slideShow;
+
+    </script>
 </body>
 </html>

@@ -124,23 +124,29 @@
 
     <div class="contactform">
     <h3>Feedback Form:</h3>
-        <form action="contact.html">
+        <form id="contact" action="contact.html">
             <div class="name">
                 <label for="name">Name:</label>
-                <input type="text" id="name">
+                <input type="text" name="userName">
             </div>
             <div class="email">
                 <label for="email">E-mail:</label>
-                <input type="email" id="email">
+                <input type="email" name="userEmail">
             </div>
             <div class="comment">
                 <label for="comment">Questions? Suggestions? Let me know!</label>
-                <textarea name="comment" rows="4" cols="50"></textarea>
+                <textarea name="userComment" rows="4" cols="50"></textarea>
             </div>
             <div>
-                <button type="submit" name="submit">Send</button>
+                <input type="button" value="Submit" id="submit-btn"/>
+                <input type="reset" value="Reset" id="reset-btn"/>
             </div>
         </form>
+        <div>
+            <p id="message">
+
+            </p>
+        </div>
     </div>
     <div class="contactinfo">
     <h3>Contact Information:</h3>
@@ -149,6 +155,31 @@
    
     <a href="sitemap.html" target="_blank">Sitemap</a>
 
+    <script>    
+        function f () {
+        const myForm = document.querySelector("#contact");
+        let yourName = myForm["userName"].value;
+        let yourEmail = myForm["userEmail"].value;
+        let yourComment = myForm["userComment"].value;
+
+        let message = "Thank you " + yourName + " for your message.";
+        document.getElementById("message").innerText = message;
+
+         if (yourName === "") {
+             alert ("Please enter your name.");
+        } 
+        if (yourEmail === "") {
+            alert("Please enter your email.");
+        } 
+        if (yourComment === "") {
+            alert ("Leave us a message!");
+        };
+        }
+
+        document.getElementById("submit-btn").onclick = f;
+
+      
+    </script>
 
 </body>
 </html>
