@@ -64,10 +64,16 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             text-align: left;
             margin-left: 20px;
-            font-size: 18pt;
+            font-size: 20pt;
         }
 
-
+        h4, h5 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: left;
+            margin-left: 20px ;
+            font-size: 15pt;
+        }
+      
         p {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 12pt; 
@@ -82,22 +88,10 @@
             font-size: 10pt;
         }
 
-        table {
-            width: 75%;
-            margin-left: auto; 
-            margin-right: auto; 
-            border-collapse: collapse;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: left;
-        }
-
-        td, th, tr { 
-            padding: 3px;
-            vertical-align: top;
-        }
-
         .description {
-            width: 40%;
+            width: 100%;
+            display: inline-flex;
+            text-align: left;
         }
 
         #title { 
@@ -128,39 +122,100 @@
     </div>
     <div class="burger">
         <h3>Hamburger Restaurants:</h3>
-            <table>
-            <tr id="title"> 
-                <th>Restaurant:</th>
-                <th>Description/Review:</th>
-                <th>Plate Recommendations:</th>
-            </tr>
-            <tr>
-                <td class="burger">Cabana Burger</td>
-                <td class="description">Basically the Brazilian revamped 'high-end' Shake Shack (cabana literally means shack in Portuguese). All of their burgers are incredible, served with their homemade sauce alongside some delicious french fries. </td>
-                <td>
-                    <ul rowspan="4">*At all these restaurants I reccommend any hamburger, along with the fries with the house mayo.
-                        <li>Hamburger of your choice</li>
-                        <li>Batatas Fritas</li>
-                        <li>Maionese da casa</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td class="burger">Bullguer</td>
-                <td class="description">Incredibly consistent, whether in store or delivery experience, the fries always arrive in perfect condition - not soggy - and the burgers warm. The meat and combinations will melt in your mouth, while filling your heart with that warmth only a burger can give.</td>
-            </tr>
-            <tr>
-                <td class="burger">Lanchonete da Cidade</td>
-                <td class="description">A chain restaurant with multiple locations, which is just a blessing because its really good. With a variety of burgers to choose from and personalize (bread, condiments, etc.), you can also order full plates of food and delicious hotdogs.</td>
-            </tr>
-            <tr>
-                <td class="burger">Stunt Burger</td>
-                <td class="description">They are known for doing the classic very well along with being innovative with their burgers. They have menu items called 'waffle burger' and also do burgers with deep fried cheese... they are always inventing new ways to make their burger 'stunt' even more.</td>
-            </tr>
-        </table>
+        <div>
+        <h4 class="burger">Cabana Burger</h4>
+            <p class="description"> <img
+                alt="Cabana Restaurant Food"
+                width="400"
+                src="images/burgers/cabana.jpg"
+                id="cabana"/> Basically the Brazilian revamped 'high-end' Shake Shack (cabana literally means shack in Portuguese). All of their burgers are incredible, served with their homemade sauce alongside some delicious french fries.
+            </p>
+           <i> *At all these restaurants I recommend any hamburger, along with the fries with the house mayo.</i> <h5>Plate Recommendations:</h5>
+            <p>
+               Hamburger of your choice, batatas fritas (usually the house ones are the best) accompanied by the house mayo.
+            </p>
+        </div>  
+        <div>
+            <h4 class="burger">Bullguer</h4>
+            <p class="description"> <img
+                alt="Bullguer Restaurant Food"
+                width="400"
+                src="images/burgers/bullguer.jpg"
+                id="bullguer"/> Incredibly consistent, whether in store or delivery experience, the fries always arrive in perfect condition - not soggy - and the burgers warm. The meat and combinations will melt in your mouth, while filling your heart with that warmth only a burger can give.
+            </p>
+        </div>  
+        <div>
+            <h4 class="burger">Lanchonete da Cidade</h4>
+            <p class="description"> <img
+                alt="Lanchonete Restaurant Food"
+                width="400"
+                src="images/burgers/lanchonete.jpg"
+                id="lanchonete"/> A chain restaurant with multiple locations, which is just a blessing because its really good. With a variety of burgers to choose from and personalize (bread, condiments, etc.), you can also order full plates of food and delicious hotdogs.
+            </p>
+        </div> 
+        <div>
+            <h4 class="burger">Stunt Burger</h4>
+            <p class="description"> <img
+                alt="Stunt Restaurant Food"
+                width="400"
+                src="images/burgers/stunt.jpg"
+                id="stunt"/> They are known for doing the classic very well along with being innovative with their burgers. They have menu items called 'waffle burger' and also do burgers with deep fried cheese... they are always inventing new ways to make their burger 'stunt' even more.
+            </p>
+        </div> 
     </div>
     <p id="credits"> All intellectual property at this website is in the public domain or is the property of the site-owner.</p>
     <a href="sitemap.html" target="_blank">Sitemap</a>
 
+<script>
+  function enlargeImage(imageID) {
+        let foodImage = document.getElementById(imageID);
+        let x = foodImage.width;
+ 
+        x = x * 1.5;
+        foodImage.width = x;
+    }
+ 
+    function normalSize(imageID) {
+     let foodImage = document.getElementById(imageID);
+     let x = foodImage.width;
+
+     x = x / 1.5;
+     foodImage.width = x;
+    }
+
+    document.getElementById("cabana").onmouseover = function (){
+        enlargeImage("cabana");
+    };
+
+    document.getElementById("bullguer").onmouseover = function (){
+        enlargeImage("bullguer");
+    };
+
+    document.getElementById("lanchonete").onmouseover = function (){
+        enlargeImage("lanchonete");
+    };
+
+    document.getElementById("stunt").onmouseover = function (){
+        enlargeImage("stunt");
+    };
+
+    document.getElementById("cabana").onmouseout = function () {
+        normalSize("cabana");
+    };
+
+    document.getElementById("bullguer").onmouseout = function () {
+        normalSize("bullguer");
+    };
+
+    document.getElementById("lanchonete").onmouseout = function () {
+        normalSize("lanchonete");
+    };
+
+    document.getElementById("stunt").onmouseout = function () {
+        normalSize("stunt");
+    };
+
+</script>
+  
 </body>
 </html>
