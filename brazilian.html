@@ -18,12 +18,12 @@
 
   gtag('config', 'G-Q7ZW9E9GJR');
 </script>
-    <style>
-            .header { 
+   <style>
+         .header { 
             overflow: hidden; 
             background-color: black; 
             margin: 0;
-            height: 50px;
+            height: 70px;
             padding: 10px 10px;
             white-space: nowrap;
      }
@@ -42,18 +42,25 @@
         }
 
         a:hover {
-            color: turquoise;
+            color:rgb(138, 4, 103);
         }
 
         .logo { 
-            color: lightpink;
+            color: rgb(150,200,123);
             text-decoration: none; 
             font-size: 20pt;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             line-height: 30px;
+            padding: 3px 15px;
         }
 
+        body {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
+      
         h1 {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             text-align: left;
@@ -68,17 +75,24 @@
             font-size: 20pt;
         }
 
-        h4, h5 {
+        h4 {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             text-align: left;
             margin-left: 20px ;
             font-size: 15pt;
         }
+
+        h5 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: left;
+            margin-left: 20px ;
+            font-size: 12pt;
+            font-style: italic;
+        }
       
         p {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 12pt; 
-            text-indent: 20px; 
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 12pt;  
             line-height: 1.5em;
             margin-left: 20px;
             margin-right: 20px;
@@ -93,11 +107,24 @@
             width: 100%;
             display: inline-flex;
             text-align: left;
+
         }
 
         #title { 
            color: maroon;
            font-size: 15pt;
+        }
+
+        img { 
+            display: block;
+            margin-left: auto; 
+            margin-right: auto;
+            width: auto;
+        }
+
+        div {
+            margin-top: 10px; 
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -128,12 +155,8 @@
             height="250"
             src="images/brazilian/figueira1.jpg"
             id="figueira1"/>
-            <img
-            alt="Figueira Restaurant Food"
-            height="250"
-            src="images/brazilian/figueira2.jpg"
-            id="figueira2"/>
-            <p class="description"><i>*personal favorite*</i> Once you walk into the restaurant you are confronted by this hundred-years-old Bengal fig tree (Figueira), where all the tables are seated underneath its massive branches. The MICHELIN star restaurant is known for its fabulous meats, but also serves fantastic fish and seafood.
+          
+            <p class="description">Once you walk into the restaurant you are confronted by this hundred-years-old Bengal fig tree (Figueira), where all the tables are seated underneath its massive branches. The MICHELIN star restaurant is known for its fabulous meats, but also serves fantastic fish and seafood.
             </p>
             <h5>Plate recommendations:</h5>
             <p>
@@ -147,11 +170,7 @@
             height="250"
             src="images/brazilian/varanda1.jpg"
             id="varanda1"/>
-            <img
-            alt="Varanda Restaurant Food"
-            height="250"
-            src="images/brazilian/varanda2.png"
-            id="varanda2"/>
+          
             <p class="description">This restaurant is known for its fabulous meat cuts - the owner was once president of the Brazilian Cattle Breeders' Association. Also, a MICHELIN star restaurant, Varanda also have a beautiful environment, with wood and glass combinations that really create a pleasant ambiance.
             </p>
             <h5>Plate recommendations:</h5>
@@ -166,11 +185,7 @@
             height="250"
             src="images/brazilian/tamb1.jpg"
             id="tamb1"/>
-            <img
-            alt="La Tambouille Restaurant Food"
-            height="250"
-            src="images/brazilian/tamb2.jpg"
-            id="tamb2"/>
+           
             <p class="description">With its location so central yet so hidden, La Tambouille is a unknown icon within the local gastronomy. However, they only offer their extraordinary feijoada on Saturdays. Cooking for three days, the meats, beans, and spices are all added together to reach their perfect taste.
             </p>
             <h5>Plate recommendations:</h5>
@@ -185,11 +200,7 @@
             height="250"
             src="images/brazilian/onca1.jpg"
             id="onca1"/>
-            <img
-            alt="Bar da Dona Onça Restaurant Food"
-            height="250"
-            src="images/brazilian/onca2.jpg"
-            id="onca2"/>
+
             <p class="description">The iconic chef, Janaína Rueda, has created a menu that integrates stories and ingredients from all over the country yet maintaining the 'traditional'.The restaurant itself is located close to the heart of São Paulo, finding itself in a historically significant neighborhood. And, of course, it is also a MICHELIN restaurant.
             </p>
             <h5>Plate recommendations:</h5>
@@ -202,6 +213,50 @@
     <p id="credits"> All intellectual property at this website is in the public domain or is the property of the site-owner.</p>
     <a href="sitemap.html" target="_blank">Sitemap</a>
 <script>
+   function changeImageF () {
+        document.getElementById("figueira1").src = "images/brazilian/figueira2.jpg";
+    }
+    
+    function originalImageF () {
+        document.getElementById("figueira1").src = "images/brazilian/figueira1.jpg";
+    }
+
+    document.getElementById("figueira1").onmouseover = changeImageF;
+    document.getElementById("figueira1").onmouseout = originalImageF;
+
+    function changeImageV () {
+        document.getElementById("varanda1").src = "images/brazilian/varanda2.png";
+    }
+    
+    function originalImageV () {
+        document.getElementById("varanda1").src = "images/brazilian/varanda1.jpg";
+    }
+
+    document.getElementById("varanda1").onmouseover = changeImageV;
+    document.getElementById("varanda1").onmouseout = originalImageV;
+
+    function changeImageL () {
+        document.getElementById("tamb1").src = "images/brazilian/tamb2.jpg";
+    }
+    
+    function originalImageL () {
+        document.getElementById("tamb1").src = "images/brazilian/tamb1.jpg";
+    }
+
+    document.getElementById("tamb1").onmouseover = changeImageL;
+    document.getElementById("tamb1").onmouseout = originalImageL;
+
+    function changeImageO () {
+        document.getElementById("onca1").src = "images/brazilian/onca2.jpg";
+    }
+    
+    function originalImageO () {
+        document.getElementById("onca1").src = "images/brazilian/onca1.jpg";
+    }
+
+    document.getElementById("onca1").onmouseover = changeImageO;
+    document.getElementById("onca1").onmouseout = originalImageO;
+
 
 
 </script>

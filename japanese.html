@@ -23,7 +23,7 @@
             overflow: hidden; 
             background-color: black; 
             margin: 0;
-            height: 50px;
+            height: 70px;
             padding: 10px 10px;
             white-space: nowrap;
      }
@@ -42,17 +42,23 @@
         }
 
         a:hover {
-            color: turquoise;
+            color:rgb(138, 4, 103);
         }
 
         .logo { 
-            color: lightpink;
+            color: rgb(150,200,123);
             text-decoration: none; 
             font-size: 20pt;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             line-height: 30px;
+            padding: 3px 15px;
         }
 
+        body {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
       
         h1 {
@@ -69,21 +75,29 @@
             font-size: 20pt;
         }
 
-        h4, h5 {
+        h4 {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             text-align: left;
             margin-left: 20px ;
             font-size: 15pt;
         }
+
+        h5 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: left;
+            margin-left: 20px ;
+            font-size: 12pt;
+            font-style: italic;
+        }
       
         p {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 12pt; 
-            text-indent: 20px; 
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 12pt;  
             line-height: 1.5em;
             margin-left: 20px;
             margin-right: 20px;
         }
+
 
         #credits { 
             font-style: italic;
@@ -94,6 +108,7 @@
             width: 100%;
             display: inline-flex;
             text-align: left;
+
         }
 
         #title { 
@@ -101,7 +116,17 @@
            font-size: 15pt;
         }
 
+        img { 
+            display: block;
+            margin-left: auto; 
+            margin-right: auto;
+            width: auto;
+        }
 
+        div {
+            margin-top: 10px; 
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -131,11 +156,6 @@
             height="250"
             src="images/japanese/huto1.jpeg"
             id="huto1"/>
-            <img
-            alt="Huto Restaurant Food"
-            height="250"
-            src="images/japanese/huto2.jpg"
-            id="huto2"/>
             <p class="description">The cuisine and ambiance will never disappoint at One MICHELIN Star restaurant. You will find the highest quality japanese food at this small restaurant (which is run by the owner himself).
             </p>
             <h5>Chef's advice:</h5>
@@ -150,11 +170,7 @@
             height="250"
             src="images/japanese/kosushi1.jpg"
             id="kosushi1"/>
-            <img
-            alt="Kosushi Restaurant Food"
-            height="250"
-            src="images/japanese/kosushi2.jpg"
-            id="kosushi2"/>
+         
             <p class="description">According to the Michelin Guide "the name [of the restaurant] comes from Japanese philosophy, as the word 'ko' means 'turtle' [referencing] longevity and the number 1." Kosushi is also a MICHELIN star restaurant, but beyond that, it is known for serving high quality fish, with a beautiful presentation, and nevertheless, an impeccable taste.
             </p>
             <h5>Plate recommendations:</h5>
@@ -169,11 +185,7 @@
             height="250"
             src="images/japanese/koji1.jpg"
             id="koji1"/>
-            <img
-            alt="Koji Restaurant Food"
-            height="250"
-            src="images/japanese/koji2.jpg"
-            id="koji2"/>
+         
             <p class="description">Located inside the São Paulo Futebol Clube soccer stadium, Koji is known for its views of the field (yes you can eat there on game day - but you have to book in advance) as well as its great variety of high quality fish.
             </p>
             <h5>Plate recommendations:</h5>
@@ -188,11 +200,7 @@
             height="250"
             src="images/japanese/ohka1.jpg"
             id="ohka1"/>
-            <img
-            alt="Ohka Restaurant Food"
-            height="250"
-            src="images/japanese/ohka2.jpg"
-            id="ohka2"/>
+          
             <p class="description">Another MICHCELIN restaurant, Ohka differentiates itself with its colorful paper images of geishas and other traditional Japanese images along its walls, creating a contemporary and elegant look. Again, the high quality and great service is what continually attracts customers.
             </p>
             <h5>Plate recommendations:</h5>
@@ -204,6 +212,54 @@
 
     <p id="credits"> All intellectual property at this website is in the public domain or is the property of the site-owner.</p>
     <a href="sitemap.html" target="_blank">Sitemap</a>
+<script>
+     function changeImageH () {
+        document.getElementById("huto1").src = "images/japanese/huto2.jpg";
+    }
+    
+    function originalImageH () {
+        document.getElementById("huto1").src = "images/japanese/huto1.jpeg";
+    }
+
+    document.getElementById("huto1").onmouseover = changeImageH;
+    document.getElementById("huto1").onmouseout = originalImageH;
+
+    function changeImageK () {
+        document.getElementById("kosushi1").src = "images/japanese/kosushi2.jpg";
+    }
+    
+    function originalImageK () {
+        document.getElementById("kosushi1").src = "images/japanese/kosushi1.jpg";
+    }
+
+    document.getElementById("kosushi1").onmouseover = changeImageK;
+    document.getElementById("kosushi1").onmouseout = originalImageK;
+
+    function changeImageB () {
+        document.getElementById("koji1").src = "images/japanese/koji2.jpg";
+    }
+    
+    function originalImageB () {
+        document.getElementById("koji1").src = "images/japanese/koji1.jpg";
+    }
+
+    document.getElementById("koji1").onmouseover = changeImageB;
+    document.getElementById("koji1").onmouseout = originalImageB;
+
+
+    function changeImage () {
+        document.getElementById("ohka1").src = "images/japanese/ohka2.jpg";
+    }
+    
+    function originalImage () {
+        document.getElementById("ohka1").src = "images/japanese/ohka1.jpg";
+    }
+
+    document.getElementById("ohka1").onmouseover = changeImage;
+    document.getElementById("ohka1").onmouseout = originalImage;
+
+</script>
 
 </body>
+
 </html>
